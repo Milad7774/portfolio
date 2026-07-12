@@ -1,0 +1,160 @@
+@keyframes h1 {
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+@keyframes pop-in {
+    from{position: relative;left: -100%;}
+    to{position: relative;left: 0;}
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: large;
+}
+body{
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+header{
+    padding: 45px;
+    background-color: rgb(156, 156, 156);
+    color: blue;
+    text-align: center;
+    margin-bottom: 10px;
+}
+header h1{
+    font-size: 3.5vw;
+}
+.h1-anim{
+    display: inline-block;
+    position: relative;
+    animation: pop-in 1s 1 ease-in, h1 2s 1 ease 1.5s;
+}
+.container{
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about-me, .projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    height: 280px;
+    background-color: wheat;
+    border: 1px solid black;
+    border-radius: 15%;
+    padding: 20px;
+}
+.projects{
+    height: 400px;
+}
+.name{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.intro{
+    width: 90%;
+    font-family: sans-serif;
+    line-height: 25px;
+}
+.bold{
+    font-weight: bold;
+}
+.project{
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.image-projects img{
+    width: 90%;
+    height: 200px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.image-projects img:hover{
+    scale: 1.1;
+    transition: all ease 0.5s;
+}
+.image-projects{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+footer{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(156, 156, 156);
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.github{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    transition: all ease 0.5s;
+}
+.github:hover{
+    background-color: black;
+    color: white;
+    transition: all ease 0.5s;
+}
+.linked{
+    background-color: #0A66C2;
+    color: white;
+    padding: 10px;
+    border:  1px solid white;
+    border-radius: 50%;
+    transition: all ease 0.5s;
+}
+.linked:hover{
+    background-color: white;
+    color: #0A66C2;
+    transition: all ease 0.5s;
+}
+
+
+/* resposnive desing */
+@media (max-width: 1024px) {
+    .about-me, .projects{
+        width: 75%;
+    }
+}
+@media (max-width: 768px) {
+    .about-me, .projects{
+        width: 90%;
+    }
+}
+@media (max-width: 639px) {
+    *{
+        font-size: 2.8vw;
+    }
+    .image-projects{
+        flex-direction: column;
+    }
+    .projects{
+        overflow: scroll;
+    }
+}
