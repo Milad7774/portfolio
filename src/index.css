@@ -28,7 +28,7 @@ header{
     margin-bottom: 10px;
 }
 header h1{
-    font-size: 3.5vw;
+    font-size: 3.2vw;
 }
 .h1-anim{
     display: inline-block;
@@ -153,6 +153,7 @@ footer a{
     }
     .image-projects{
         flex-direction: column;
+        gap: 30px;
     }
     .projects{
         overflow: scroll;
