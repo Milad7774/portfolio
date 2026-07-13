@@ -11,7 +11,7 @@ const App = () => {
     setTimeout(() => {
       setShow(false);
     }, 2500);
-  });
+  }, []);
 
   return (
     <div>
