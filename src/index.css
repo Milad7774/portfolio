@@ -142,13 +142,10 @@ footer a{
 /* resposnive desing */
 @media (max-width: 1024px) {
     .about-me, .projects{
-        width: 90%;
+        width: 96%;
     }
 }
 @media (max-width: 768px) {
-    .about-me, .projects{
-        width: 90%;
-    }
     .image-projects{
         flex-direction: column;
         gap: 30px;

@@ -32,6 +32,7 @@ const App = () => {
             <span className="bold">JavaScript</span>,{" "}
             <span className="bold">React</span>,
             <span className="bold"> PHP</span>,{" "}
+            <span className="bold">NodeJs</span>,{" "}
             <span className="bold">SQL</span>, and{" "}
             <span className="bold">MySQL</span>. Developed{" "}
             <span className="project">responsive web applications</span>{" "}
@@ -61,7 +62,7 @@ const App = () => {
             </div>
             <div>
               <a
-                href="https://milad7774.github.io/Responsive-e-commerce-web-application/V3.0/html/index.html"
+                href="https://e-commerce-milad.infinityfree.me/html/index.html?page=1"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -72,6 +73,7 @@ const App = () => {
                 />
               </a>
               <a href="https://github.com/Milad7774/Responsive-e-commerce-web-application" target="_blank" rel="noopener noreferrer">Source Code↗</a>
+              <a href="https://e-commerce-milad.infinityfree.me/Admin%20Panel/logout.php" style={{marginLeft: "10px"}}>Admin Panel↗</a>
             </div>
             <div>
               <a
