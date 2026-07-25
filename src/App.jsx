@@ -73,7 +73,7 @@ const App = () => {
                 />
               </a>
               <a href="https://github.com/Milad7774/Responsive-e-commerce-web-application" target="_blank" rel="noopener noreferrer">Source Code↗</a>
-              <a href="https://e-commerce-milad.infinityfree.me/Admin%20Panel/logout.php" style={{marginLeft: "10px"}}>Admin Panel↗</a>
+              <a href="https://e-commerce-milad.infinityfree.me/Admin%20Panel/logout.php" target="_blank" style={{marginLeft: "10px"}}>Admin Panel↗</a>
             </div>
             <div>
               <a
