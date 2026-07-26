@@ -33,6 +33,7 @@ const App = () => {
             <span className="bold">React</span>,
             <span className="bold"> PHP</span>,{" "}
             <span className="bold">NodeJs</span>,{" "}
+            <span className="bold">Express</span>,{" "}
             <span className="bold">SQL</span>, and{" "}
             <span className="bold">MySQL</span>. Developed{" "}
             <span className="project">responsive web applications</span>{" "}
