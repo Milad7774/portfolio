@@ -47,7 +47,7 @@ const App = () => {
         <div className="projects">
           <span className="name">My Projects:</span>
           <div className="image-projects">
-            <div>
+            <div className="project1">
               <a
                 href="https://milad7774.github.io/Clinic-Manager/#/Create"
                 target="_blank"
@@ -61,7 +61,7 @@ const App = () => {
               </a>
               <a href="https://github.com/Milad7774/Clinic-Manager" target="_blank" rel="noopener noreferrer">Source Code↗</a>
             </div>
-            <div>
+            <div className="project2">
               <a
                 href="https://e-commerce-milad.infinityfree.me/html/index.html?page=1"
                 target="_blank"
@@ -73,10 +73,12 @@ const App = () => {
                   alt="E-commerce Pitcure"
                 />
               </a>
+              <div className="two-anchors">
               <a href="https://github.com/Milad7774/Responsive-e-commerce-web-application" target="_blank" rel="noopener noreferrer">Source Code↗</a>
               <a href="https://e-commerce-milad.infinityfree.me/Admin%20Panel/logout.php" target="_blank" style={{marginLeft: "10px"}}>Admin Panel↗</a>
+              </div>
             </div>
-            <div>
+            <div className="project3">
               <a
                 href="https://milad7774.github.io/AI-Project/The%20website/index.html"
                 target="_blank"
