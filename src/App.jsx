@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useState } from "react";
 import clinicManager from './assets/Clinic-Manager.png'
 import aiPicture from './assets/AI Image Detector.png'
@@ -6,6 +6,10 @@ import eCommerce from './assets/E-commerce.png';
 
 const App = () => {
   const [show, setShow] = useState(true);
+  const [alert, setAlert] = useState(false);
+  const timerRef = useRef(null);
+  const intervalRef = useRef(null);
+  const [count, setCount] = useState(5);
 
   useEffect(() => {
     setTimeout(() => {
@@ -13,8 +17,26 @@ const App = () => {
     }, 2500);
   }, []);
 
+  function handleClick(){
+    setAlert(true);
+    timerRef.current =setTimeout(() => {
+      setCount(5)
+      setAlert(false)
+      clearInterval(intervalRef.current)
+      window.location.href = "https://e-commerce-milad.infinityfree.me/html/index.html?page=1"
+    }, 5000);
+    intervalRef.current = setInterval(() =>{
+      setCount((prev) => prev > 0 ? prev - 1 : 0)
+    },1000)
+  }
+
   return (
     <div>
+      {alert && <div className="alert">
+        <button className="alert-btn" onClick={() => {setAlert(false);clearInterval(intervalRef.current); clearTimeout(timerRef.current); setCount(5)}}>X</button>
+        <div>You might need to refresh the Page to see the products (infinityFree hosting problem)</div>
+        <div className="redirection">Redirecting in {count}</div>
+      </div>}
       <header className="header">
         {show && <h1 className="h1-anim">Dear Hiring Manager...</h1>}
         {!show && <h1>You got no time so check out my Live projects</h1>}
@@ -62,17 +84,15 @@ const App = () => {
               <a href="https://github.com/Milad7774/Clinic-Manager" target="_blank" rel="noopener noreferrer">Source Code↗</a>
             </div>
             <div className="project2">
-              <a
-                href="https://e-commerce-milad.infinityfree.me/html/index.html?page=1"
-                target="_blank"
-                rel="noopener noreferrer"
+              <div
+                onClick={handleClick}
               >
                 <span>E-commerce ↗:</span>
                 <img
                   src= { eCommerce }
                   alt="E-commerce Pitcure"
                 />
-              </a>
+              </div>
               <div className="two-anchors">
               <a href="https://github.com/Milad7774/Responsive-e-commerce-web-application" target="_blank" rel="noopener noreferrer">Source Code↗</a>
               <a href="https://e-commerce-milad.infinityfree.me/Admin%20Panel/logout.php" target="_blank" style={{marginLeft: "10px"}}>Admin Panel↗</a>
