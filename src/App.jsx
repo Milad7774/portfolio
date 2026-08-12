@@ -52,7 +52,8 @@ const App = () => {
             <span className="bold">HTML</span>,{" "}
             <span className="bold">CSS</span>,{" "}
             <span className="bold">JavaScript</span>,{" "}
-            <span className="bold">React</span>,
+            <span className="bold">React</span>,{" "}
+            <span className="bold">MongoDB</span>{" "}
             <span className="bold"> PHP</span>,{" "}
             <span className="bold">NodeJs</span>,{" "}
             <span className="bold">Express</span>,{" "}
@@ -71,7 +72,7 @@ const App = () => {
           <div className="image-projects">
             <div className="project1">
               <a
-                href="https://milad7774.github.io/Clinic-Manager/#/Create"
+                href="https://clinic-manager-mern-stack.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -81,13 +82,13 @@ const App = () => {
                   alt="Clinic Manager picture"
                 />
               </a>
-              <a href="https://github.com/Milad7774/Clinic-Manager" target="_blank" rel="noopener noreferrer">Source Code↗</a>
+              <a href="https://github.com/Milad7774/Clinic-Manager-MERN-Stack-" target="_blank" rel="noopener noreferrer">Source Code↗</a>
             </div>
             <div className="project2">
               <div
                 onClick={handleClick}
               >
-                <span>E-commerce ↗:</span>
+                <span style={{color: "blue", cursor: "pointer"}}>E-commerce ↗:</span>
                 <img
                   src= { eCommerce }
                   alt="E-commerce Pitcure"
