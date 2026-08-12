@@ -99,20 +99,7 @@ const App = () => {
               <a href="https://e-commerce-milad.infinityfree.me/Admin%20Panel/logout.php" target="_blank" style={{marginLeft: "10px"}}>Admin Panel↗</a>
               </div>
             </div>
-            <div className="project3">
-              <a
-                href="https://milad7774.github.io/AI-Project/The%20website/index.html"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>AI Image Detector ↗:</span>
-                <img
-                  src= { aiPicture }
-                  alt="AI Image Detector Picture"
-                />
-              </a>
-              <a href="https://github.com/Milad7774/AI-Project" target="_blank" rel="noopener noreferrer">Source Code↗</a>
-            </div>
+            
           </div>
         </div>
       </div>
