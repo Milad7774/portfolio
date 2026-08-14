@@ -18,13 +18,13 @@ const App = () => {
   }, []);
 
   function handleClick(){
-    if(alert) return;
+    if(alert) return
     setAlert(true);
     timerRef.current =setTimeout(() => {
       setCount(5)
       setAlert(false)
       clearInterval(intervalRef.current)
-      window.open("https://e-commerce-milad.infinityfree.me/html/index.html?page=1", "_blank", "noopener,noreferrer")
+      window.location.href = "https://e-commerce-milad.infinityfree.me/html/index.html?page=1"
     }, 5000);
     intervalRef.current = setInterval(() =>{
       setCount((prev) => prev > 0 ? prev - 1 : 0)
