@@ -83,7 +83,6 @@ const App = () => {
                   alt="Clinic Manager picture"
                 />
               </a>
-              <a href="https://github.com/Milad7774/Clinic-Manager-MERN-Stack-" target="_blank" rel="noopener noreferrer">Source Code↗</a>
             </div>
             <div className="project2">
               <div
